@@ -1,0 +1,11 @@
+a=int(input("请输入一个四位数字："))
+b=int(a/1000)
+c=int((a-b*1000)/100)
+d=int((a-b*1000-c*100)/10)
+n=int(a-b*1000-c*100-d*10)
+h=n*1000+d*100+c*10+b
+print("千位为:",b)
+print("百位为:",c)
+print("十位为:",d)
+print("个位为:",n)
+print("逆序为:",h)
